@@ -1,4 +1,4 @@
-import { Dimensions, Image, StyleSheet, Text, TextInput, TouchableOpacity, View, ScrollView } from "react-native";
+import { Dimensions, Image, StyleSheet, Text, TextInput, TouchableOpacity, ScrollView } from "react-native";
 
 import React from "react";
 import Texto from "./components/texto"
