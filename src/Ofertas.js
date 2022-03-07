@@ -1,4 +1,4 @@
-import React,{Fragment} from "react";
+import React from "react";
 import { Image, StyleSheet, View, Dimensions, FlatList,StatusBar, SafeAreaView, ScrollView  } from "react-native";
 
 import Texto from "./components/texto.js"
@@ -76,8 +76,6 @@ export default function Ofertas ( ){
 const estilos = StyleSheet.create({
   inicio: {
     flexDirection:'row',
-    borderWidth:4,
-    borderColor:'#fea501',
   },
     logo:{
       width:'35%',

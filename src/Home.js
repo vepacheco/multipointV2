@@ -1,15 +1,8 @@
-import {
-  Dimensions,
-  Image,
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Dimensions, SafeAreaView, StatusBar, StyleSheet, TouchableOpacity } from "react-native";
+
+import React from "react";
 
 import Logo from "./components/logo";
-import React from "react";
 import Texto from "./components/texto";
 // import face from "./assets/face.jpg";
 // import insta from "./assets/insta.jpg";
@@ -19,35 +12,39 @@ import Texto from "./components/texto";
 const width_screen = Dimensions.get("screen").width;
 
 export default function TelaInicial({ navigation }) {
+
+  const login = () => {
+    navigation.reset({
+      index: 0,
+      routes:[{name:"Login"}]
+    })
+  }
+
+  const cadastro = () => {
+    navigation.reset({
+      index: 0,
+      routes:[{name:"Form"}]
+    })
+  }
+
+
   return (
     <SafeAreaView>
       <StatusBar />
       <React.Fragment>
         <Logo />
         <Texto style={estilos.textoboasvindas}>
-          {" "}
           Faça parte da nossa equipe
         </Texto>
-        <TouchableOpacity
-          style={estilos.button}
-          onPress={() => {
-            navigation.navigate("Form");
-          }}
-        >
+        <TouchableOpacity style={estilos.button} onPress={() => cadastro()}>
           <Texto style={estilos.textobotao}> Cadastre-se </Texto>
         </TouchableOpacity>
+
         <Texto style={estilos.textoboasvindas}> Já faz parte?</Texto>
         
-        <TouchableOpacity
-          style={estilos.button}
-          onPress={() => {
-            navigation.navigate("Ofertas");
-          }}
-        >
+        <TouchableOpacity style={estilos.button} onPress={() => login()}>
           <Texto style={estilos.textobotao}> Login </Texto>
         </TouchableOpacity>
-
-        <Texto style={estilos.textoboasvindas}> Esqueceu a senha?</Texto>
 
         {/* <View style={estilos.rodape}>
           <Image source={insta} style={estilos.rodape1} />

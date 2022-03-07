@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "multipointV2",
-    "slug": "multipointV2",
+    "name": "multipoint",
+    "slug": "multipoint",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/logo.jpg",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/logo.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

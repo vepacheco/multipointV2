@@ -11,8 +11,6 @@ export default function Logo() {
 
 const estilos = StyleSheet.create({
   logo: {
-    borderWidth: 4,
-    borderColor: "#fea501",
     width: null,
     height: (351 / 700) * width_screen,
     resizeMode: "contain",
